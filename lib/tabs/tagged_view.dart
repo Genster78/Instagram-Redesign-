@@ -7,7 +7,7 @@ class TaggedView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Tagged View'),
+        child: Text('Nothing to show here'),
       ),
     );
   }
