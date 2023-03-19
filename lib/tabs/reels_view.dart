@@ -6,7 +6,7 @@ class ReelsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Reels View'),
+      child: Text('Nothing to show here'),
     );
   }
 }

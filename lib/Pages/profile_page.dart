@@ -87,9 +87,22 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: Container(
                     width: 100,
                     height: 100,
+                    padding: const EdgeInsets.all(1),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.grey[300],
+                      border: Border.all(
+                        color: Colors.grey.shade400,
+                        strokeAlign: BorderSide.strokeAlignOutside,
+                        width: 3,
+                      ),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(100),
+                      child: Image.asset(
+                        'lib/images/my2.jpeg',
+                        fit: BoxFit.fitWidth,
+                      ),
                     ),
                   ),
                 ),
@@ -99,7 +112,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
                     Text(
-                      '365',
+                      '365k',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
@@ -220,7 +233,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
 
-             const SizedBox(height: 20),
+            const SizedBox(height: 20),
             // tab bar
             TabBar(
               tabs: tabs,
@@ -228,7 +241,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
             //tab bar view
             SizedBox(
-              height: 1000,
+              height: 1200,
               child: TabBarView(children: tabBarViews),
             ),
           ],
