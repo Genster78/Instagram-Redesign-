@@ -41,13 +41,13 @@ class _ProfilePageState extends State<ProfilePage> {
 
   final List<Widget> tabBarViews = [
     // feed view
-    FeedView(),
+    const FeedView(),
 
     // reels view
-    ReelsView(),
+    const ReelsView(),
 
     // tagged view
-    TaggedView(),
+    const TaggedView(),
   ];
 
   @override

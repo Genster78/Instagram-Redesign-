@@ -5,8 +5,12 @@ class ReelsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Nothing to show here'),
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Text(
+        'Nothing to show here...',
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
